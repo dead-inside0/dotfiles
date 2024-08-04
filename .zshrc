@@ -118,3 +118,5 @@ eval "$(zoxide init zsh)"
 alias cd="z"
 
 alias cat="bat"
+
+alias gogh='bash -c  "$(wget -qO- https://git.io/vQgMr)"'
