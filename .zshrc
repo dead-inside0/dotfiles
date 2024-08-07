@@ -77,7 +77,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting)
+plugins=(git tmux zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,6 +117,5 @@ fi
 eval "$(zoxide init zsh)"
 alias cd="z"
 
-alias cat="bat"
-
 alias gogh='bash -c  "$(wget -qO- https://git.io/vQgMr)"'
+export PATH="$PATH:/opt/nvim-linux64/bin"
