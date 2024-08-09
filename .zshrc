@@ -51,7 +51,7 @@ else
   export EDITOR='vim'
 fi
 
-eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh-themes/amro.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh-themes/deadinside0.omp.toml)"
 
 eval "$(zoxide init zsh)"
 
