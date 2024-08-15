@@ -54,7 +54,7 @@ fi
 
 eval "$(zoxide init zsh)"
 
-eval "$(oh-my-posh init zsh --config '~/.config/oh-my-posh-themes/bubblesline.omp.json')"
+eval "$(oh-my-posh init zsh --config '~/.config/oh-my-posh-themes/catppuccin_mocha.omp.json')"
 
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
