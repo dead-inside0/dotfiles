@@ -36,7 +36,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting jsontools)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,6 +56,7 @@ eval "$(zoxide init zsh)"
 
 eval "$(oh-my-posh init zsh --config '~/.config/oh-my-posh-themes/catppuccin_mocha.omp.json')"
 
+export RANGER_LOAD_DEFAULT_RC=FALSE
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
@@ -67,3 +68,6 @@ eval "$(oh-my-posh init zsh --config '~/.config/oh-my-posh-themes/catppuccin_moc
 eval $(thefuck --alias)
 alias gogh='bash -c "$(wget -qO- https://git.io/vQgMr)"'
 alias cat='bat'
+
+# Created by `pipx` on 2024-08-17 19:10:26
+export PATH="$PATH:/Users/ernest/.local/bin"
