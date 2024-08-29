@@ -49,7 +49,7 @@ export LANG=en_US.UTF-8
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nano'
 else
-  export EDITOR='vim'
+  export EDITOR='nvim'
 fi
 
 eval "$(zoxide init zsh)"
@@ -68,6 +68,3 @@ export RANGER_LOAD_DEFAULT_RC=FALSE
 eval $(thefuck --alias)
 alias gogh='bash -c "$(wget -qO- https://git.io/vQgMr)"'
 alias cat='bat'
-
-# Created by `pipx` on 2024-08-17 19:10:26
-export PATH="$PATH:/Users/ernest/.local/bin"
