@@ -14,7 +14,6 @@ return {
 		},
 		sources = {
 			"filesystem",
-			"document_symbols",
 		},
 		window = {
 			mappings = {

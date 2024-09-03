@@ -56,7 +56,6 @@ eval "$(zoxide init zsh)"
 
 eval "$(oh-my-posh init zsh --config '~/.config/oh-my-posh-themes/catppuccin_mocha.omp.json')"
 
-export RANGER_LOAD_DEFAULT_RC=FALSE
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
