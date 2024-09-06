@@ -12,12 +12,22 @@ return {
 			},
 			view = {
 				width = 30,
+				side = "right",
 			},
 			renderer = {
 				group_empty = true,
+				highlight_git = true,
+				icons = {
+					show = {
+						git = true,
+					},
+				},
 			},
 			filters = {
-				dotfiles = true,
+				dotfiles = false,
+			},
+			git = {
+				enable = true,
 			},
 		})
 	end,
