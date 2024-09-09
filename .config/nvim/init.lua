@@ -1,4 +1,2 @@
-require('config.lazy')
-require("vim-configs")
-require("plugin-keybinds")
-
+require('ernest.config.lazy')
+require('ernest.config.vim')
