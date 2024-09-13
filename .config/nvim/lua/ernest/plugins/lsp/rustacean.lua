@@ -1,12 +1,11 @@
 return {
-	'mrcjkb/rustaceanvim',
-	version = '^5', -- Recommended
+	"mrcjkb/rustaceanvim",
+	version = "^5", -- Recommended
 	lazy = false, -- This plugin is already lazy
 	config = function()
 		vim.g.rustaceanvim = {
 			-- Plugin configuration
-			tools = {
-			},
+			tools = {},
 			-- LSP configuration
 			server = {
 				on_attach = function(client, bufnr)
@@ -14,16 +13,15 @@ return {
 				end,
 				default_settings = {
 					-- rust-analyzer language server configuration
-					['rust-analyzer'] = {
+					["rust-analyzer"] = {
 						checkOnSave = {
-							extraArgs = { "--target-dir", "/tmp/rust-analyzer-check" }
-						}
+							extraArgs = { "--target-dir", "/tmp/rust-analyzer-check" },
+						},
 					},
 				},
 			},
 			-- DAP configuration
-			dap = {
-			},
+			dap = {},
 		}
-	end
+	end,
 }
