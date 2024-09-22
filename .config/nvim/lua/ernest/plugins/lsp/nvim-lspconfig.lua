@@ -10,10 +10,17 @@ return {
         lspconfig.lua_ls.setup({
             capabilities = capabilities,
         })
+        lspconfig.bashls.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.pyright.setup({
+            capabilities = capabilities,
+        })
         lspconfig.jdtls.setup({
             capabilities = capabilities,
         })
-        lspconfig.bashls.setup({
+
+        lspconfig.texlab.setup({
             capabilities = capabilities,
         })
 
@@ -22,13 +29,13 @@ return {
             callback = function(args)
                 vim.bo[args.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
 
-                local opts = { buffer = args.buf }
-                vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
-                vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+                local opts = { buffer = args.buf, silent = true, noremap = true }
+                vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, opts)
+                vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, opts)
                 vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
                 vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, opts)
                 vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, opts)
-                vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
+                vim.keymap.set("n", "<leader>gr", vim.lsp.buf.implementation, opts)
             end,
         })
     end,
