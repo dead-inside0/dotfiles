@@ -1,13 +1,12 @@
 export ZSH="$HOME/.oh-my-zsh"
 # HYPHEN_INSENSITIVE="true"
 
-zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
 # DISABLE_AUTO_TITLE="true"
-
 ENABLE_CORRECTION="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -41,6 +40,4 @@ alias cat='bat'
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
-export PATH="/Applications/SuperCollider.app/Contents/MacOS/:$PATH"
-export ANDROID_HOME="/usr/local/share/android-commandlinetools"
 export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
