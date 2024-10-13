@@ -32,12 +32,19 @@ eval "$(zoxide init zsh)"
 
 source <(fzf --zsh)
 
-eval "$(oh-my-posh init zsh --config '~/.config/oh-my-posh-themes/catppuccin_mocha.omp.json')"
+. /usr/local/opt/asdf/libexec/asdf.sh
+
+eval "$(oh-my-posh init zsh --config '~/.config/oh-my-posh-themes/shell.omp.json')"
 
 eval $(thefuck --alias)
 alias gogh='bash -c "$(wget -qO- https://git.io/vQgMr)"'
 alias cat='bat'
+
+export PATH="/usr/local/opt/unzip/bin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
+export PATH="/usr/local/opt/libxslt/bin:$PATH"
+
+pfetch

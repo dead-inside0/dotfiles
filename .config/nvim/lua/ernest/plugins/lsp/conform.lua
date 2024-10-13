@@ -8,10 +8,12 @@ return {
                 lua = { "stylua" },
                 rust = { "rustfmt", lsp_format = "fallback" },
                 toml = { "taplo" },
-                java = { "google-java-format", lsp_format = "fallback" },
+                java = { lsp_format = true },
                 sh = { "shfmt" },
                 python = { "black", "isort" },
                 tex = { "latexindent" },
+                elixir = { lsp_format = true },
+                json = { "fixjson" },
             },
             format_on_save = {
                 timeout_ms = 500,
