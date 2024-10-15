@@ -12,11 +12,11 @@ return {
                 sh = { "shfmt" },
                 python = { "black", "isort" },
                 tex = { "latexindent" },
-                elixir = { lsp_format = true },
                 json = { "fixjson" },
+                elixir = { "mix" },
             },
             format_on_save = {
-                timeout_ms = 500,
+                timeout_ms = 1000,
                 async = false,
                 lsp_fallback = true,
             },

@@ -40,6 +40,8 @@ eval $(thefuck --alias)
 alias gogh='bash -c "$(wget -qO- https://git.io/vQgMr)"'
 alias cat='bat'
 
+export PF_INFO="ascii title os host shell editor wm pkgs memory palette"
+
 export PATH="/usr/local/opt/unzip/bin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
