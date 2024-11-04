@@ -10,10 +10,12 @@ return {
                 toml = { "taplo" },
                 java = { lsp_format = true },
                 sh = { "shfmt" },
+                zsh = { "shfmt" },
                 python = { "black", "isort" },
                 tex = { "latexindent" },
                 json = { "fixjson" },
                 elixir = { "mix" },
+                cpp = { "clang-format" },
             },
             format_on_save = {
                 timeout_ms = 1000,

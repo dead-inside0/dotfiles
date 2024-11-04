@@ -100,7 +100,7 @@
           },
           "style": "diamond",
           "template": "  {{ .Path }} ",
-          "trailing_diamond": "<#ffafd2>  </>",
+          "trailing_diamond": "<#ffafd2> </>",
           "type": "path"
         }
       ],
