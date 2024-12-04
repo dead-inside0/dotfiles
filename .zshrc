@@ -23,9 +23,9 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nano'
+	export EDITOR='nano'
 else
-  export EDITOR='nvim'
+	export EDITOR='nvim'
 fi
 
 eval "$(zoxide init zsh)"
@@ -42,6 +42,8 @@ alias cat='bat'
 
 export PF_INFO="ascii title os host shell editor wm pkgs memory palette"
 
+set HOMEBREW_NO_ENV_HINTS
+
 export PATH="/usr/local/opt/unzip/bin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
@@ -50,3 +52,9 @@ export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
 export PATH="/usr/local/opt/libxslt/bin:$PATH"
 
 pfetch
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
+
+export PATH="/usr/local/texlive/2024/darwin-universal:$PATH"
