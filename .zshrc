@@ -28,6 +28,8 @@ else
 	export EDITOR='nvim'
 fi
 
+export PATH=$PATH:/home/ernest/.local/bin
+
 eval "$(zoxide init zsh)"
 
 source <(fzf --zsh)
@@ -39,4 +41,10 @@ alias gogh='bash -c "$(wget -qO- https://git.io/vQgMr)"'
 alias cat='bat'
 unalias gk
 
+clear
 fastfetch
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+. $HOME/.asdf/asdf.sh
